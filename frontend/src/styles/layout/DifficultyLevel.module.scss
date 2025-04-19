@@ -1,0 +1,63 @@
+@use "../abstracts/variables" as var;
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    gap: .5rem;
+
+    padding: .5rem .25rem;
+
+    cursor: pointer;
+
+    .difficultyIcon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: .875em;
+    }
+
+    &:hover {
+        background-color: var(--hov-primary);
+
+        h2 {
+            transition: color .2s linear;
+
+            &.blue {
+                color: #007bff;
+            }
+
+            &.green {
+                color: #008000;
+            }
+
+            &.yellow {
+                color: #ffff00;
+            }
+
+            &.poppy {
+                color: #ff3d01;
+            }
+
+            &.purple {
+                color: #800080;
+            }
+
+            &.red {
+                color: #ff0000;
+            }
+
+            &.darkred {
+                color: #8b0000;
+            }
+        }
+    }
+}
